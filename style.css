@@ -1,0 +1,93 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(241, 241, 241);
+}
+
+.namePage {
+    color: rgb(97, 163, 224);
+    width: auto;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0%;
+    padding: 0.5%;
+}
+
+.toolbar-main {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+}
+
+.toolbar-main-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tools-used-div {
+    align-content: flex-start;
+    background-color: aqua;
+    list-style: none;
+    width: 50%;
+    height: 300px;
+    margin: 5px;
+    padding: 8px;
+}
+
+li.tools-used {
+    border: 2px solid;
+    border-color: rgb(43, 131, 205);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(97, 163, 224);
+    display: inline;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+}
+
+.tools-used img {
+    height: 40px;
+    padding: 0px;
+    width: 40px;
+}
+
+.tools-itens {
+    display: flex;
+    flex-direction: row;
+}
+
+.author-img {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons-tools-used {
+    width: 50px;
+    height: auto;
+}
+
+.projects-list {
+    background-color: rgb(43, 131, 205);
+}
+
+.footer-toolbar {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+}
