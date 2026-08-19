@@ -4,14 +4,41 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
+a{
+    color: inherit;           
+    text-decoration: none;    
+    cursor: default; 
+}
+
+p{
+    margin: 60px;
+}
+
+.toolbar-main-list{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
 .namePage {
     color: rgb(97, 163, 224);
     width: auto;
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-    margin: 0%;
-    padding: 0.5%;
+    margin: 10px;
+    width: 15%;
+
+}
+
+.sub-shortcut{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: rgb(97, 163, 224);
 }
 
 .toolbar-main {
@@ -24,42 +51,46 @@ body {
     list-style: none;
 }
 
-.toolbar-main-list {
-    display: flex;
-    flex-direction: row;
-}
-
 .container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tools{
+    margin: 60px;
 }
 
 .tools-used-div {
     align-content: flex-start;
-    background-color: aqua;
     list-style: none;
-    width: 50%;
-    height: 300px;
+    width: 80%;
+    height: 50%;
     margin: 5px;
     padding: 8px;
+    background-color: aqua;
 }
 
-li.tools-used {
+.tools-used {
     border: 2px solid;
+    background-color: rgb(97, 163, 224);
     border-color: rgb(43, 131, 205);
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(97, 163, 224);
-    display: inline;
-    flex: 0 0 25%;
-    box-sizing: border-box;
+    margin: 5px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .tools-used img {
-    height: 40px;
     padding: 0px;
-    width: 40px;
+    width: 30px;
 }
 
 .tools-itens {
@@ -78,16 +109,83 @@ li.tools-used {
     height: auto;
 }
 
-.projects-list {
-    background-color: rgb(43, 131, 205);
-}
-
-.footer-toolbar {
+.about-me {
     width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.projects-list {
+    width: 100%;
+    background-color: rgb(97, 163, 224);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card-project-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card-Projects {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .card {
     background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px; 
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+}
+
+.footer-toolbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern-font{
+    font-family: 'Inter', sans-serif;
+}
+
+#about-me-title{
+    width: 100%;
+    text-align: center;
+}
+
+#project-title{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#about-me-text{
+    margin: 50px;
+}
+
+#text-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#line{
+    height: 3px;
+    width: 20%;
+    background-color:rgb(97, 163, 224);
 }
