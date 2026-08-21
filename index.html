@@ -15,8 +15,8 @@
             <H1 class="namePage">Cassio Passos</H1>
             <div class="toolbar-main-list">
                 <section class="sub-shortcut">
-                    <li class="pattern-font" ><a href="#about-me-title">Sobre mim</a></li>
-                    <li class="pattern-font"><a href="#project-title">Projetos</a></li>
+                    <li><a href="#about-me-title">Sobre mim</a></li>
+                    <li><a href="#project-title">Projetos</a></li>
                 </section>
             </div>
             
@@ -24,11 +24,11 @@
 
         <div class="container">
             <div class="tools">
-                <H1 class="pattern-font">Seja bem vindo!</H1>
-                <p class="pattern-font">Ola me chamo <span class="namePage">Cassio Passos</span>, Desenvolvedor Full Stack em evolução.</p>
+                <H1>Seja bem vindo!</H1>
+                <p id="welcome-text">Ola me chamo <span id="namePage">Cassio Passos</span>, Desenvolvedor Full Stack em evolução.</p>
             
 
-                <h2 class="pattern-font" id="tools-title">Ferramentas que utilizo:</h2>
+                <h2 id="tools-title">Ferramentas que utilizo:</h2>
                 <div class="tools-used-div">
                     <section id="tools-icons">
                         <li class="tools-used"><img src="images/java.png"></li>
@@ -43,34 +43,47 @@
                 </div>
             </div>
 
-            <div class="author-img">
+            <div id="author-img">
                 <img src="images/euPort.png" alt="Cassio Passos">
             </div>   
 
         </div>
 
         <div>
-            <h1 class="pattern-font" id="about-me-title">Sobre mim</h1>
+            <h1 id="about-me-title">Sobre mim</h1>
             <div class="about-me">
                 <div id="line"></div>
             </div>
-            
-            <div class="card">
-                <p class="pattern-font" id="about-me-text">Eu  tenho 24 anos estudante de analise e desenvolvimento de sistemas na Universidade Unisinos bla bla bla bla</p>
-            </div>
+            <div class="about-me-container">
+                <div class="about-me-card">
+                    <p id="about-me-text">Olá! Meu nome é Cassio Passos, tenho 24 anos e sou estudante de Análise e Desenvolvimento de Sistemas na Universidade do Vale do Rio dos Sinos (Unisinos).
 
+                    Sou apaixonado por tecnologia e desenvolvimento de software, sempre buscando aprender novas linguagens, ferramentas e boas práticas de programação. Tenho interesse em desenvolvimento web, banco de dados e criação de soluções que resolvam problemas reais.
+
+                    Este portfólio reúne alguns dos projetos que desenvolvi durante minha jornada acadêmica e também projetos pessoais, demonstrando minha evolução, dedicação e vontade de crescer como desenvolvedor.
+
+                    Meu objetivo é conquistar oportunidades na área de tecnologia, contribuir com equipes inovadoras e continuar evoluindo como profissional, sempre aprendendo novas tecnologias e enfrentando novos desafios.
+                    </p>
+                </div>
+            </div>
+            
         </div>
             
         <div class="projects-list">
-            <h1 class="pattern-font" id="project-title">Projetos</h1>
-                <div class="card-project-list">
-                    <img class="card-Projects" alt="FinanceEs" src="images/financeProject.png" >
+            <h1 id="project-title">Projetos</h1>
+            <div class="projects">
+                <div class="carrossel-container">
+                    <div class="card-project-list">
+                        <div class="card-Projects"><img alt="FinanceEs" src="images/financeProject.png" ></div>
+                        <div class="card-Projects"><img alt="FinanceEs" src="images/financeProject.png" ></div>
+                        <div class="card-Projects"><img alt="FinanceEs" src="images/financeProject.png" ></div>
+                    </div>
                 </div>
-            
+            </div>
         </div>
         
         <div class="footer-toolbar">
-            <p class="pattern-font" id="text-footer">© CASSIO PASSOS 2026 Todos os Direitos Reservados</p>
+            <p id="text-footer">© CASSIO PASSOS 2026 Todos os Direitos Reservados</p>
         </div>
         
         <script src="script.js" defer></script>
