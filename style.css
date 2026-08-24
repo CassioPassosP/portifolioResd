@@ -1,7 +1,19 @@
+/*
+* {
+  outline: 1px solid red !important;
+}
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0%;
     padding: 0%;
-    background-color: rgb(241, 241, 241);
+    overflow-x: hidden;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
 }
 
 a{
@@ -17,7 +29,6 @@ p{
 .toolbar-main-list{
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
     width: 100%;
     gap: 20px;
 }
@@ -28,7 +39,7 @@ p{
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-    margin: 10px;
+    margin: 20px;
     width: 15%;
 
 }
@@ -39,6 +50,20 @@ p{
     justify-content: space-between;
     gap: 20px;
     color: rgb(97, 163, 224);
+}
+
+.shortcutSocialMedia{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 20px;
+    color: rgb(97, 163, 224);
+}
+
+.shortcutSocialMedia img{
+    width: 35px;
+    margin-right: 20px;
 }
 
 .toolbar-main {
@@ -116,6 +141,14 @@ p{
     justify-content: center;
 }
 
+.card-projects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .projects-list {
     width: 100%;
     background-color: rgb(97, 163, 224);
@@ -127,18 +160,46 @@ p{
 .card-project-list{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    margin-top: 30px;
     margin-bottom: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    padding: 40px 25%;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 100px;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to right, transparent, black 55%, black 45%, transparent);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
 }
 
-.card-Projects {
-    width: 50%;
-    height: 50%;
+.cardsImages {
+    background-color: white;
+    width: 400px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    flex: 0 0 400px;
+    scroll-snap-align: center;
+}
+
+.cardsImages img {
+    margin-top: 5px;
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px solid rgb(238, 238, 238);
 }
 
 .card {
