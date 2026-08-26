@@ -1,25 +1,22 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0%;
     padding: 0%;
     background-color: rgb(241, 241, 241);
 }
 
-li {
+li a{
     font-family: 'Inter', sans-serif;
-}
-
-h1 {
-    font-family: 'Inter', sans-serif;
-}
-
-h2 {
-    font-family: 'Inter', sans-serif;
-}
-
-a{
     color: inherit;           
     text-decoration: none;    
     cursor: default; 
+}
+
+h1, h2 {
+    font-family: 'Inter', sans-serif;
 }
 
 p{
@@ -32,7 +29,6 @@ p{
 .toolbar-main-list{
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
     width: 100%;
     gap: 20px;
 }
@@ -40,7 +36,7 @@ p{
 .namePage {
     color: rgb(97, 163, 224);
     width: auto;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 15px;
@@ -56,6 +52,21 @@ p{
     gap: 20px;
     color: rgb(97, 163, 224);
 }
+
+.shortcutSocialMedia{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 20px;
+    color: rgb(97, 163, 224);
+}
+
+.shortcutSocialMedia img{
+    width: 35px;
+    margin-right: 20px;
+}
+
 
 .toolbar-main {
     background-color: white;
@@ -92,7 +103,7 @@ p{
 
 #tools-icons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: center;
     justify-items: center;
@@ -108,14 +119,15 @@ p{
     }
 }
 
-.tools-used {
+.li-tools {
     border: 2px solid;
     background-color: rgb(97, 163, 224);
     border-color: rgb(43, 131, 205);
     border-radius: 10px;
     padding: 10px;
     margin: 0;
-    width: 30px;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,11 +184,11 @@ p{
   max-width: 1000px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none; /* Oculta a barra no Firefox */
+  scrollbar-width: none; 
 }
 
 .carrossel-container::-webkit-scrollbar {
-  display: none; /* Oculta a barra no Chrome/Safari */
+  display: none; 
 }
 
 .projects-list {
@@ -190,10 +202,23 @@ p{
 .card-project-list{
     width: 100%;
     display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-    gap: 46px;
-    padding: 10px;
+    justify-content:center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    padding: 40px 25%;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 100px;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to right, transparent, black 35%, black 65%, transparent);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
 }
 
 .card-Projects {
@@ -214,6 +239,8 @@ p{
     justify-content: center;
     border-radius: 25px;
     object-fit: cover;
+    border: 2px solid;
+    border-color: rgb(43, 131, 205);
 }
 
 .about-me-container{
@@ -234,6 +261,49 @@ p{
     padding: 20px;
 }
 
+.title-card-projects{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.descricao-card-projects{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.cardsImages {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    flex: 0 0 400px;
+    scroll-snap-align: center;
+    padding: 0px;
+}
+
+.cardsImages img {
+    margin-top: 15px;
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px solid rgb(238, 238, 238);
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px; 
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+}
+
 .footer-toolbar {
     width: 100%;
     height: 50px;
@@ -247,7 +317,7 @@ p{
 #namePage{
     color: rgb(97, 163, 224);
     width: auto;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -291,3 +361,4 @@ p{
     width: 20%;
     background-color:rgb(97, 163, 224);
 }
+
