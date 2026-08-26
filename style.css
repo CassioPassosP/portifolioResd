@@ -82,9 +82,7 @@ p{
     display: flex;
     justify-content: space-between;
     width: 95%;
-    align-items: center;
-    justify-content: center;
-    
+    align-items: center;  
 }
 
 .tools{
