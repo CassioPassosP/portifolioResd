@@ -1,11 +1,10 @@
  /* * {
   outline: 1px solid red !important;
-} 
+}
 */
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 
 body {
     margin: 0%;
@@ -21,9 +20,9 @@ body.dark {
 
 li, a{
     font-family: 'Inter', sans-serif;
-    color: inherit;           
-    text-decoration: none;    
-    cursor: default; 
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
 }
 
 h1, h2 {
@@ -399,7 +398,15 @@ body.dark .cardsImages {
 }
 
 @media (max-width: 600px) {
-    
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    #author-img img {
+        width: 250px;
+    }
+
     .tools-used-div {
         width: 40%;
     }
@@ -465,18 +472,18 @@ body.dark .cardsImages {
 
 .carrossel-container {
     mask-image: linear-gradient(
-    to right, 
-    transparent, 
-    black 15%, 
-    black 85%, 
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
     transparent
   );
-  
+
   -webkit-mask-image: linear-gradient(
-    to right, 
-    transparent, 
-    black 15%, 
-    black 85%, 
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
     transparent
   );
 
@@ -485,11 +492,11 @@ body.dark .cardsImages {
   max-width: 1000px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none; 
+  scrollbar-width: none;
 }
 
 .carrossel-container::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 .projects-list {
@@ -500,8 +507,6 @@ body.dark .cardsImages {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .card-project-list{
     width: 100%;
@@ -562,7 +567,7 @@ body.dark .cardsImages {
     width: 80%;
     height: 50%;
     height: auto;
-    border-radius: 25px; 
+    border-radius: 25px;
     margin: 50px;
     padding: 20px;
 }
@@ -604,7 +609,7 @@ body.dark .cardsImages {
 .card {
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 25px; 
+    border-radius: 25px;
     height: 200px;
     margin: 50px;
     padding: 20px;
@@ -662,6 +667,12 @@ body.dark .footer-toolbar {
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
+.toolbar-sub-shortcut{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
 #namePage{
     color: rgb(97, 163, 224);
     width: auto;
@@ -673,8 +684,8 @@ body.dark .footer-toolbar {
 #author-img {
     width: auto;
     display: flex;
-    justify-content: flex-start; 
-    margin: 100px; 
+    justify-content: flex-start;
+    margin: 100px;
 }
 
 #welcome-text{
@@ -728,7 +739,7 @@ body.dark .footer-toolbar {
     margin-right: 20px;
 }
 
-/* From Uiverse.io by Galahhad */ 
+/* From Uiverse.io by Galahhad */
 .theme-switch {
   --toggle-size: 10px;
   /* the size is adjusted using font-size,
