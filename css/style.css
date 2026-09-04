@@ -417,6 +417,7 @@ body.dark .cardsImages {
     }
 
     #author-img img {
+        margin-top: 0px;
         width: 250px;
     }
 
@@ -711,6 +712,7 @@ body.dark .footer-toolbar {
 
 #author-img {
     width: auto;
+    height: 600px;
     display: flex;
     justify-content: flex-start;
     margin: 100px;
